@@ -8,7 +8,7 @@ pkgname='bashdb'
 #_ver='4.4-1.0.1'
 _ver='5.0-1.1.2'
 pkgver="${_ver//-/_}"
-pkgrel='1'
+pkgrel='2'
 pkgdesc='A debugger for Bash scripts loosely modeled on the gdb command syntax'
 arch=('any')
 url='http://bashdb.sourceforge.net/'
@@ -24,7 +24,7 @@ sha512sums=('32ff6d315e8cf9d59485802d5284fde53fa2d9f40ec238428a479f8a1ed1359e9be
 prepare() {
   set -u
   cd "${_srcdir}"
-  #sed -e "/^\s\+'4.4' / s:): | '5.0'&:g" -i 'configure'
+  sed -e "2793s/5\.0/5\.1/" -i 'configure'
   set +u
 }
 

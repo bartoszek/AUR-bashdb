@@ -1,7 +1,7 @@
 pkgbase = bashdb
 	pkgdesc = A debugger for Bash scripts loosely modeled on the gdb command syntax
 	pkgver = 5.0_1.1.2
-	pkgrel = 1
+	pkgrel = 2
 	url = http://bashdb.sourceforge.net/
 	arch = any
 	license = GPL
